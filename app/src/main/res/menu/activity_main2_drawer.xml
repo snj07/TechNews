@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favorite_articles"
+            android:icon="@drawable/ic_action_fav"
+            android:title="@string/favorite" />
+
+    </group>
+
+
+    <item android:title="@string/article">
+        <menu>
+            <group
+                android:id="@+id/menu_mid"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_tech_radar"
+                    android:icon="@drawable/ic_action_bookmark"
+                    android:title="@string/tech_radar" />
+                <item
+                    android:id="@+id/nav_tech_crunch"
+                    android:icon="@drawable/ic_action_bookmark"
+                    android:title="@string/tech_cruch" />
+                <item
+                    android:id="@+id/nav_ars_tehcnica"
+                    android:icon="@drawable/ic_action_bookmark"
+                    android:title="@string/ars_technica" />
+                <item
+                    android:id="@+id/nav_the_verge"
+                    android:icon="@drawable/ic_action_bookmark"
+                    android:title="@string/the_verge" />
+                <item
+                    android:id="@+id/nav_hacker_news"
+                    android:icon="@drawable/ic_action_bookmark"
+                    android:title="@string/hacker_news" />
+                <item
+                    android:id="@+id/nav_google_news"
+                    android:icon="@drawable/ic_action_bookmark"
+                    android:title="@string/google_news" />
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/menu_logout"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_logout"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>
